@@ -18,24 +18,139 @@ div.header {
   flex-direction: row;
   animation-duration: 1s;
   animation-name: OU;
+  align-items: center;
 }
 
 img.logo {
   width: auto;
-  height: 3.5vh;
+  height: 7vh;
+  margin-left: 0.625rem;
 }
 
 p.headerFont {
   margin-left: 0.625rem;
-  font-size: 1.2vh;
+  font-size: 2.5vh;
 }
 
 @keyframes OU {
   0% {
     opacity: 0;
-    transform: translateY(-10px);
+    transform: translateY(-0.625rem);
   }
   100% {
     opacity: 1;
   }
+}
+
+h1.txt1 {
+  margin-left: 10px;
+  color: white;
+  font-weight: 400;
+  animation-name: LR;
+  animation-duration: 1s;
+  font-size: 4vh;
+}
+
+hr.trenn1 {
+  width: 100%;
+  height: 0.125rem;
+  border: none;
+  background: white;
+  margin-left: 0.625rem;
+  animation-name: LR;
+  animation-duration: 1s;
+}
+
+@keyframes LR {
+  0% {
+    opacity: 1;
+    transform: translateX(-0.625rem);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+p.txt2 {
+  margin-left: 0.625rem;
+  color: white;
+  animation-name: LR;
+  animation-duration: 1s;
+  font-weight: lighter;
+  font-size: 2.5vh;
+}
+
+button.btn1 {
+  width: fit-content;
+  color: white;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 0.1875rem;
+  padding-bottom: 0.1875rem;
+  font-size: 2.3vh;
+  font-weight: lighter;
+  background: none;
+  border: 0.0625rem white solid;
+  border-radius: 6.25rem;
+  margin-left: 0.625rem;
+  animation-name: LR;
+  animation-duration: 1s;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+button.btn1:hover {
+  border: 0.0625rem rgb(180, 180, 180) solid;
+  color: rgb(180, 180, 180);
+}
+
+hr.trenn2 {
+  width: 100%;
+  height: 0.125rem;
+  border: none;
+  margin-left: 0.625rem;
+  background: repeating-linear-gradient(
+    to right,
+    white 0px,
+    white 5px,
+    transparent 5px,
+    transparent 10px
+  );
+  animation-name: LR;
+  animation-duration: 1s;
+}
+
+div.impressum {
+  width: 100%;
+  background: rgb(24, 24, 24);
+  height: 30vh;
+  box-shadow: 10px 0 15px black;
+  animation-name: LR;
+  animation-duration: 1s;
+}
+
+a.txt3 {
+  margin-left: 0.625rem;
+  color: white;
+  animation-name: LR;
+  animation-duration: 1s;
+  font-weight: lighter;
+  font-size: 2.5vh;
+}
+
+button.btn2 {
+  color: black;
+  background: none;
+  border: 1px black solid;
+  border-radius: 100px;
+  margin-left: auto;
+  margin-right: 10px;
+  font-size: 2.5vh;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+button.btn2:hover {
+  color: rgb(65, 65, 65);
+  border: 1px rgb(65, 65, 65) solid;
 }
