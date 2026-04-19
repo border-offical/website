@@ -22,12 +22,12 @@ div.header {
 
 img.logo {
   width: auto;
-  height: 3.5vw;
+  height: 3.5vh;
 }
 
 p.headerFont {
   margin-left: 0.625rem;
-  font-size: 1.2vw;
+  font-size: 1.2vh;
 }
 
 @keyframes OU {
