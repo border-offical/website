@@ -1,22 +1,27 @@
-const root = document.documentElement;
-const checkbox = document.querySelector(".switch input");
+document.addEventListener("DOMContentLoaded", () => {
+  const root = document.documentElement;
+  const checkbox = document.querySelector(".switch input");
 
-// Theme laden
-const savedTheme = localStorage.getItem("theme");
+  const savedTheme = localStorage.getItem("theme");
 
-if (savedTheme === "light") {
-  root.classList.add("light");
-  checkbox.checked = true;
-}
+  if (savedTheme === "light") {
+    root.classList.add("light");
 
-function switchTheme() {
-  root.classList.toggle("light");
-
-  if (root.classList.contains("light")) {
-    localStorage.setItem("theme", "light");
-    checkbox.checked = true;
-  } else {
-    localStorage.setItem("theme", "dark");
-    checkbox.checked = false;
+    if (checkbox) {
+      checkbox.checked = true;
+    }
   }
-}
+
+  // Funktion global
+  window.switchTheme = function () {
+    root.classList.toggle("light");
+
+    const isLight = root.classList.contains("light");
+
+    localStorage.setItem("theme", isLight ? "light" : "dark");
+
+    if (checkbox) {
+      checkbox.checked = isLight;
+    }
+  };
+});
