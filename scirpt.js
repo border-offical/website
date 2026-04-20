@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // Funktion global
   window.switchTheme = function () {
     root.classList.toggle("light");
 
