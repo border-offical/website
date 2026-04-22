@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 :root {
   --bg-color: rgb(34, 34, 34);
   --header-color: white;
@@ -287,3 +288,281 @@ input:focus + .slider {
     margin-right: auto;
   }
 }
+=======
+:root {
+  --bg-color: rgb(34, 34, 34);
+  --header-color: white;
+  --txtw-color: white;
+  --txtb-color: black;
+  --impressum-color: rgb(24, 24, 24);
+  --button-border-color: rgb(180, 180, 180);
+  --weight-font: 1;
+}
+
+.light {
+  --bg-color: rgb(216, 216, 216);
+  --header-color: white;
+  --txtw-color: rgb(0, 0, 0);
+  --txtb-color: rgb(0, 0, 0);
+  --impressum-color: rgb(255, 255, 255);
+  --button-border-color: rgb(75, 75, 75);
+  --weight-font: 200;
+}
+
+html {
+  background-color: var(--bg-color);
+}
+
+body {
+  font-family: Inter, sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+* {
+  transition: all 0.3s ease;
+}
+
+div.header {
+  width: 100%;
+  background-color: var(--header-color);
+  padding: 2px;
+  display: flex;
+  flex-direction: row;
+  animation-duration: 1s;
+  animation-name: OU;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+img.logo {
+  width: auto;
+  height: 7vh;
+  margin-left: 0.625rem;
+}
+
+p.headerFont {
+  margin-left: 0.625rem;
+  font-size: 2.5vh;
+  color: var(--txtb-color);
+}
+
+@keyframes OU {
+  0% {
+    opacity: 1;
+    transform: translateY(-0.625rem);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+h1.txt1 {
+  margin-left: 10px;
+  color: var(--txtw-color);
+  font-weight: 400;
+  animation-name: LR;
+  animation-duration: 1s;
+  font-size: 4vh;
+}
+
+hr.trenn1 {
+  width: 100%;
+  height: 0.125rem;
+  border: none;
+  background: var(--txtw-color);
+  margin-left: 0.625rem;
+  animation-name: LR;
+  animation-duration: 1s;
+}
+
+@keyframes LR {
+  0% {
+    opacity: 1;
+    transform: translateX(-0.625rem);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+p.txt2 {
+  margin-left: 0.625rem;
+  color: var(--txtw-color);
+  animation-name: LR;
+  animation-duration: 1s;
+  font-weight: var(--weight-font);
+  font-size: 2.5vh;
+}
+
+button.btn1 {
+  width: fit-content;
+  color: var(--txtw-color);
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  font-size: 2.3vh;
+  font-weight: lighter;
+  background: none;
+  border: 0.0625rem var(--txtw-color) solid;
+  border-radius: 6.25rem;
+  margin-left: 0.625rem;
+  animation-name: LR;
+  animation-duration: 1s;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+button.btn1:hover {
+  border: 0.0625rem var(--button-border-color) solid;
+  color: var(--button-border-color);
+}
+
+hr.trenn2 {
+  width: 100%;
+  height: 0.125rem;
+  border: none;
+  margin-left: 0.625rem;
+  background: repeating-linear-gradient(
+    to right,
+    var(--txtw-color) 0px,
+    var(--txtw-color) 5px,
+    transparent 5px,
+    transparent 10px
+  );
+  animation-name: LR;
+  animation-duration: 1s;
+}
+
+div.impressum {
+  width: 100%;
+  background: var(--impressum-color);
+  height: 30vh;
+  animation-name: LR;
+  animation-duration: 1s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 -4px 4px var(--impressum-color);
+}
+
+a,
+p.txt3 {
+  margin-left: 0.625rem;
+  color: var(--txtw-color);
+  animation-name: LR;
+  animation-duration: 1s;
+  font-weight: var(--weight-font);
+  margin-top: 0.1875rem;
+  font-size: 2.5vh;
+  transition: 0.1s;
+}
+
+a.txt3:hover {
+  color: var(--button-border-color);
+}
+
+button.btn2 {
+  color: var(--txtb-color);
+  background: none;
+  border: 1px var(--txtb-color) solid;
+  border-radius: 100px;
+  margin-left: auto;
+  margin-right: 10px;
+  font-size: 2.5vh;
+  cursor: pointer;
+  transition: 0.1s;
+  padding: 0.3125rem;
+}
+
+button.btn2:hover {
+  color: var(--button-border-color);
+  border: 1px var(--button-border-color) solid;
+}
+
+h1.txt4 {
+  margin-left: 0.625rem;
+  color: var(--txtw-color);
+  animation-name: LR;
+  animation-duration: 1s;
+  font-weight: bold;
+  font-size: 6vh;
+}
+
+p.txt5 {
+  margin-left: 0.625rem;
+  color: var(--txtw-color);
+  animation-name: LR;
+  animation-duration: 1s;
+  font-weight: var(--weight-font);
+  font-size: 2.5vh;
+  white-space: pre-line;
+}
+
+div.btndiv {
+  margin-left: auto;
+}
+
+.switch {
+  --size: 3.4vh;
+
+  position: relative;
+  display: inline-block;
+  width: calc(var(--size) * 2.2);
+  height: calc(var(--size) * 1.2);
+  margin-left: 0.625rem;
+  animation-name: LR;
+  animation-duration: 1s;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  inset: 0;
+  background-color: #b4b4b4;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: calc(var(--size) * 0.9);
+  width: calc(var(--size) * 0.9);
+  left: calc(var(--size) * 0.15);
+  bottom: calc(var(--size) * 0.15);
+  background-color: rgb(255, 255, 255);
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(calc(var(--size) * 1.1));
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+.slider.round {
+  border-radius: calc(var(--size) * 1.2);
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+>>>>>>> b34645736c421a461608bdbebab011596ef0a32a
