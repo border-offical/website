@@ -328,3 +328,43 @@ div.mods-container {
 .toggle-panel > div {
   min-height: 0;
 }
+
+div.timer {
+  display: flex;
+}
+
+p.txt6 {
+  margin-left: 0.625rem;
+  color: var(--txtw-color);
+  animation-name: LR;
+  animation-duration: 1s;
+  font-weight: var(--weight-font);
+  font-size: 4vh;
+  white-space: pre-line;
+  margin-top: 0.625rem;
+  margin-bottom: 0;
+}
+
+@media (max-width: 200px) {
+  div.timer {
+    flex-direction: column;
+  }
+
+  div.timer p.txt6:nth-child(2),
+  div.timer p.txt6:nth-child(4) {
+    display: none;
+  }
+}
+
+p.details {
+  margin-left: 0.625rem;
+  color: var(--txtw-color);
+  animation-name: LR;
+  animation-duration: 1s;
+  font-weight: var(--weight-font);
+  font-size: 1.9vh;
+  white-space: pre-line;
+  margin-top: 0.625rem;
+  margin-bottom: 0;
+  font-style: italic;
+}
