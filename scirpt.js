@@ -40,7 +40,7 @@ document.querySelectorAll("[data-toggle]").forEach((btn) => {
   });
 });
 
-const TARGET_DATE = new Date("2026-05-25T15:00:00");
+const TARGET_DATE = new Date("2026-05-25T14:20:00");
 
 function updateCountdown() {
   const now = new Date();
