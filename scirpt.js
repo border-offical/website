@@ -40,7 +40,7 @@ document.querySelectorAll("[data-toggle]").forEach((btn) => {
   });
 });
 
-const TARGET_DATE = new Date("2026-05-25T14:20:00");
+/*const TARGET_DATE = new Date("2026-05-25T14:20:00");
 
 function updateCountdown() {
   const now = new Date();
@@ -73,4 +73,21 @@ function updateCountdown() {
 }
 
 updateCountdown();
-const timer = setInterval(updateCountdown, 1000);
+const timer = setInterval(updateCountdown, 1000);*/
+
+/*
+<div class="timer">
+      <p class="txt6" id="H"></p>
+      <p class="txt6">:</p>
+      <p class="txt6" id="M"></p>
+      <p class="txt6">:</p>
+      <p class="txt6" id="S"></p>
+    </div>
+    <div class="timer">
+      <p class="txt6">H</p>
+      <p class="txt6">:</p>
+      <p class="txt6">Min</p>
+      <p class="txt6">:</p>
+      <p class="txt6">Sec</p>
+    </div>
+    */
